@@ -65,10 +65,22 @@ section h2 {
 }
 
 .hero {
-    background-color: #e6f0fa;
+    /* 1. This points to your image file */
+    background-image: url('college-bg.jpg'); 
+    
+    /* 2. This makes the image cover the entire section without stretching */
+    background-size: cover; 
+    
+    /* 3. This centers the image perfectly */
+    background-position: center; 
+    
+    /* 4. This prevents the image from tiling/repeating */
+    background-repeat: no-repeat; 
+    
     border-radius: 8px;
     margin-top: 2rem;
-    padding: 5rem 5%;
+    padding: 8rem 5%; /* Increased padding to make the image taller */
+    color: white; /* Changes text color to white so it's readable over a photo */
 }
 
 .hero p {
